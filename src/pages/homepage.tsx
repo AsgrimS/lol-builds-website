@@ -2,14 +2,14 @@ import React from "react"
 
 import { QueryCache, ReactQueryCacheProvider } from "react-query"
 
-import ItemList from "../components/ItemList"
+import BuildsList from "../components/BuildsList"
 
 const queryCache = new QueryCache()
 
 const homepage = () => {
 	return (
 		<ReactQueryCacheProvider queryCache={queryCache}>
-			<ItemList />
+			<BuildsList />
 		</ReactQueryCacheProvider>
 	)
 }
